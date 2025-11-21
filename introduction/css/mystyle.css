@@ -4,10 +4,23 @@ body {
 
 h1 {
     color: navy;
-    margin-left: 20px;
+    text-align: center;
 }
 
 .center {
     text-align: center;
-    color: rgb(179, 177, 177);
+}
+
+.text, h2, p, li {
+    color: rgb(220, 220, 220);
+}
+
+/* Border box for About Me section */
+.profile-box {
+    border: 2px solid rgb(200, 200, 200);
+    border-radius: 10px;
+    padding: 20px;
+    width: 60%;
+    margin: 20px auto;
+    background-color: rgba(255, 255, 255, 0.05);
 }
