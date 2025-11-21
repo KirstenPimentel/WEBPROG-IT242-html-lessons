@@ -3,7 +3,7 @@ body {
 }
 
 h1 {
-    color: navy;
+    color: rgb(220, 220, 220);
     text-align: center;
 }
 
@@ -11,16 +11,17 @@ h1 {
     text-align: center;
 }
 
+/* Light gray-white text */
 .text, h2, p, li {
     color: rgb(220, 220, 220);
 }
 
-/* Border box for About Me section */
+/* BORDER BOX STYLE */
 .profile-box {
     border: 2px solid rgb(200, 200, 200);
-    border-radius: 10px;
     padding: 20px;
-    width: 60%;
+    width: 50%;
     margin: 20px auto;
+    border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.05);
 }
