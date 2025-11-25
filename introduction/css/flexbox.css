@@ -18,7 +18,7 @@ body {
 }
 
 h1 {
-    color: rgb(220, 220, 220);
+    color: rgb(220, 220, 220); 
     text-align: center;
 }
 
@@ -38,6 +38,8 @@ h1 {
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.05);
 }
+
+/* NEW — Center the big image */
 .gallery-img {
     display: block;
     margin: 20px auto;
