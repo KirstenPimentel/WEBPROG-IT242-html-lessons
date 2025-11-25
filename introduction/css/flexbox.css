@@ -1,17 +1,32 @@
+
+.gallery-img {
+    display: block;
+    margin: 20px auto;
+}
+
+
 .container {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;     
+    align-items: center;
+    gap: 40px;                     
+    padding: 30px;
     background-color: gray;
 }
 
+/* Individual image boxes */
 .container div {
     background-color: #f1f1f1;
-    width: 100px;
-    margin: 50px;
-    padding: 10px;
+    padding: 15px;
+    border-radius: 10px;
     text-align: center;
-    font-size: 30px;
 }
+
+.container img {
+    width: 150px;       
+    height: 150px;      
+    object-fit: cover;  
+    border-radius: 5px; 
 
 body {
     background-color: rgb(84, 88, 90);
@@ -34,13 +49,7 @@ h1 {
     border: 2px solid rgb(200, 200, 200);
     padding: 20px;
     width: 50%;
-    margin: 20px auto;
+    margin: 20px auto;     /* centers box */
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.05);
-}
-
-/* NEW — Center the big image */
-.gallery-img {
-    display: block;
-    margin: 20px auto;
 }
