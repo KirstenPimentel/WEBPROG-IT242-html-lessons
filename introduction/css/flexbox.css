@@ -4,7 +4,6 @@
     margin: 20px auto;
 }
 
-
 .container {
     display: flex;
     justify-content: center;     
@@ -14,7 +13,7 @@
     background-color: gray;
 }
 
-/* Individual image boxes */
+
 .container div {
     background-color: #f1f1f1;
     padding: 15px;
@@ -49,7 +48,9 @@ h1 {
     border: 2px solid rgb(200, 200, 200);
     padding: 20px;
     width: 50%;
-    margin: 20px auto;     /* centers box */
+    margin: 20px auto;     
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.05);
+}
+
 }
