@@ -43,3 +43,9 @@ h1 {
     display: block;
     margin: 20px auto;
 }
+
+.big-img-center {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
