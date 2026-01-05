@@ -70,9 +70,12 @@
   <h2 class="center">Concert Gallery</h2>
 
   <div class="gallery">
-    <img v-for="img in images" :src="img" alt="Concert photo">
+    <div class="gallery-item" v-for="(img, index) in images" :key="index">
+      <img :src="img" :alt="'Concert photo ' + (index + 1)">
+    </div>
   </div>
 </section>
+
 
 <section id="guestbookApp" class="guestbook">
   <h2>Guestbook</h2>

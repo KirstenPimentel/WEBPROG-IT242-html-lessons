@@ -1,4 +1,4 @@
-// VUE GALLERY
+
 Vue.createApp({
   data() {
     return {
@@ -14,7 +14,7 @@ Vue.createApp({
   }
 }).mount("#galleryApp");
 
-// VUE GUESTBOOK
+
 Vue.createApp({
   data() {
     return {
