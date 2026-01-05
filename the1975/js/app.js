@@ -1,28 +1,27 @@
-
+// VUE GALLERY
 Vue.createApp({
   data() {
     return {
       images: [
-  "images/gallery1.jpg",
-  "images/gallery2.jpg",
-  "images/gallery3.jpg",
-  "images/gallery4.jpg",
-  "images/gallery5.jpg",
-  "images/gallery6.jpg"
-]
-
-    }
+        "images/gallery1.jpg",
+        "images/gallery2.jpg",
+        "images/gallery3.jpg",
+        "images/gallery4.jpg",
+        "images/gallery5.jpg",
+        "images/gallery6.jpg"
+      ]
+    };
   }
-}).mount('#galleryApp');
+}).mount("#galleryApp");
 
-// GUESTBOOK
+// VUE GUESTBOOK
 Vue.createApp({
   data() {
     return {
-      name: '',
-      comment: '',
+      name: "",
+      comment: "",
       entries: []
-    }
+    };
   },
   methods: {
     addComment() {
@@ -31,9 +30,9 @@ Vue.createApp({
           name: this.name,
           comment: this.comment
         });
-        this.name = '';
-        this.comment = '';
+        this.name = "";
+        this.comment = "";
       }
     }
   }
-}).mount('#guestbookApp');
+}).mount("#guestbookApp");
