@@ -50,20 +50,18 @@
 
 </div>
 
-<!-- SPOTIFY EMBED -->
 <iframe style="border-radius:12px"
 src="https://open.spotify.com/embed/playlist/2HsUnenU2argKszYFjNoIK"
 width="100%" height="380" frameborder="0" allowfullscreen></iframe>
 
-<!-- GALLERY -->
+
 <section id="galleryApp">
-  <h2 style="text-align:center;">Concert Gallery</h2>
+  <h2 style="text-align:center;">Gallery</h2>
   <div class="gallery">
     <img v-for="img in images" :src="img">
   </div>
 </section>
 
-<!-- GUESTBOOK -->
 <section id="guestbookApp" style="padding:20px;">
   <h2>Guestbook</h2>
   <input v-model="name" placeholder="Your name">
