@@ -3,70 +3,78 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kirsten Evan M. Pimentel - Portfolio</title>
+<title>The 1975 Fan Website</title>
+
 <link rel="stylesheet" href="css/style.css">
 <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 </head>
 
 <body>
 
+<!-- HEADER -->
 <div class="header">
-  Kirsten Evan M. Pimentel
+  Personal Profile Web Page
 </div>
 
+<!-- NAVIGATION (SIDEBAR MOVED HERE) -->
 <nav>
   <a href="index.html">Home</a>
-  <a href="apcrams.html">APC RAMS</a>
+  <a href="#about">My Profile</a>
+  <a href="#">APC RAMS</a>
   <a href="resources.html">Resources</a>
   <a href="https://open.spotify.com/playlist/2HsUnenU2argKszYFjNoIK?si=33c80e5e781946fc" target="_blank">
     Spotify Playlist 🎧
   </a>
 </nav>
 
+<!-- MAIN LAYOUT -->
 <div class="row">
 
+  <!-- LEFT: PROFILE IMAGE -->
   <div class="profile-image">
     <img src="images/profile.jpg" alt="My Profile Picture">
   </div>
 
+  <!-- CENTER: ABOUT ME -->
   <div class="main" id="about">
     <h1>About Me</h1>
 
+    <!-- DO NOT REMOVE -->
     <p><strong>Name:</strong> Kirsten Evan M. Pimentel</p>
     <p><strong>Education:</strong> Asia Pacific College</p>
     <p><strong>Course:</strong> BSIT – Mobile & Internet Technologies</p>
 
+    <!-- PERSONAL PARAGRAPH -->
     <p class="about-text">
-  In my free time, I enjoy playing volleyball and I am a member of <strong>Volleyball Life Club (VLC) </strong>. 
-  What I love about this organization is that we can play freely without worrying about making mistakes and just have fun.
-</p>
-
-<p class="about-text">
-  I also love diving into online games with friends, especially <strong>Valorant</strong> and <strong>League of Legends</strong>. 
-  Solo gaming is also something I enjoy, especially playing simulation games where I can relax and take my time.
-</p>
-
-<p class="about-text">
-  When I’m not gaming, I like to rewatch <strong>Haikyuu!!</strong>, <strong>The Walking Dead</strong>, and <strong>Peaky Blinders</strong>.
-</p>
-
-
-
+      In my free time, I enjoy playing online games with my friends such as
+      Valorant and League of Legends. When I play by myself, I like to rewatch
+      my favorite series like Haikyuu, The Walking Dead, and Peaky Blinders.
+    </p>
   </div>
 
-  <div class="right">
-    <h3>Favorite The 1975 Highlights</h3>
+ <div class="right">
+  <h3>Favorite The 1975 Highlights</h3>
 
-    <p><strong>Favorite Era:</strong> <em>A Brief Inquiry Into Online Relationships</em></p>
-    <p><strong>Favorite Song:</strong> <em>I Always Wanna Die (Sometimes)</em></p>
-    <p><strong>Favorite Lyric:</strong> “If you can't survive, just try”</p>
-    <p><strong>Go-to Emotion:</strong> Chill</p>
-    <p><strong>Never Skip:</strong> Heart Out</p>
-    <p><strong>Recommendation:</strong> She's American</p>
-  </div>
+  <p><strong>Favorite Era:</strong><br>
+  <em>A Brief Inquiry Into Online Relationships</em></p>
+
+  <p><strong>Favorite Song:</strong><br>
+  <em>I Always Wanna Die (Sometimes)</em></p>
+
+  <p><strong>Favorite Lyric:</strong><br>
+  “If you can't survive, just try”</p>
+
+  <p><strong>Go-to Emotion:</strong> Chill</p>
+
+  <p><strong>Never Skip:</strong> Heart Out</p>
+
+  <p><strong>Recommendation:</strong> She's American</p>
+</div>
+
 
 </div>
 
+<!-- SPOTIFY EMBED -->
 <iframe
   style="border-radius:12px"
   src="https://open.spotify.com/embed/playlist/2HsUnenU2argKszYFjNoIK"
@@ -76,7 +84,7 @@
   allowfullscreen>
 </iframe>
 
-
+<!-- GALLERY -->
 <section id="galleryApp">
   <h2 class="center">Concert Gallery</h2>
 
@@ -87,7 +95,7 @@
   </div>
 </section>
 
-
+<!-- GUESTBOOK -->
 <section id="guestbookApp" class="guestbook">
   <h2>Guestbook</h2>
 
@@ -102,7 +110,7 @@
   </ul>
 </section>
 
-
+<!-- FOOTER -->
 <div class="footer">
   Resize the browser window to see the responsive effect.
 </div>
