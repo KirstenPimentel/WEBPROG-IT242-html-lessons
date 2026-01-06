@@ -1,38 +1,43 @@
 * {
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Arial', Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  margin: 0;
-  background-color: #f2f2f2;
-  color: #000;
+  background-color: #0e0e0e; 
+  color: #f5f5f5; 
 }
 
 .header {
-  background-color: #000;
-  color: #fff;
+  background-color: #1c1c1c;
+  color: #ff2d95; 
   text-align: center;
   padding: 40px;
   font-size: 40px;
   letter-spacing: 2px;
+  font-weight: bold;
 }
 
 nav {
   display: flex;
   gap: 20px;
   padding: 15px;
-  border-bottom: 2px solid #000;
+  border-bottom: 2px solid #ff2d95;
   flex-wrap: wrap;
+  background-color: #1c1c1c;
 }
 
 nav a {
-  color: #000;
+  color: #f5f5f5;
   text-decoration: none;
   font-weight: bold;
+  transition: color 0.3s;
 }
 
 nav a:hover {
+  color: #ff2d95;
   text-decoration: underline;
 }
 
@@ -44,27 +49,30 @@ nav a:hover {
 }
 
 .profile-image {
-  background-color: #fff;
-  border: 2px solid #000;
-  padding: 15px;
+  background-color: #1c1c1c;
+  border: 2px solid #ff2d95;
+  padding: 5px;
   text-align: center;
+  overflow: hidden;
+  aspect-ratio: 3/4; 
 }
 
 .profile-image img {
   width: 100%;
-  height: auto;
-  border: 2px solid #000;
+  height: 100%;
+  object-fit: cover;
+  border: 2px solid #ff2d95;
 }
 
 .main,
 .right {
-  background-color: #fff;
+  background-color: #1c1c1c;
   padding: 25px;
-  border: 2px solid #000;
+  border: 2px solid #ff2d95;
 }
 
 .right {
-  background-color: #eaeaea;
+  background-color: #2a2a2a;
 }
 
 .right p {
@@ -76,15 +84,16 @@ nav a:hover {
   font-style: italic;
 }
 
-.center {
-  text-align: center;
-}
-
 .about-text {
   margin-top: 15px;
   line-height: 1.6;
 }
 
+.center {
+  text-align: center;
+}
+
+/* GALLERY */
 .gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -93,9 +102,14 @@ nav a:hover {
 }
 
 .gallery-item {
-  border: 2px solid #000;
-  background-color: #fff;
+  border: 2px solid #ff2d95;
+  background-color: #1c1c1c;
   padding: 10px;
+  transition: transform 0.3s;
+}
+
+.gallery-item:hover {
+  transform: scale(1.05);
 }
 
 .gallery img {
@@ -113,19 +127,28 @@ textarea {
   width: 100%;
   padding: 10px;
   margin: 5px 0;
+  background-color: #2a2a2a;
+  border: 2px solid #ff2d95;
+  color: #f5f5f5;
 }
 
 button {
-  background-color: #000;
-  color: #fff;
+  background-color: #ff2d95;
+  color: #0e0e0e;
   padding: 10px;
   border: none;
   cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #ff63b0;
 }
 
 .footer {
-  background-color: #222;
-  color: #fff;
+  background-color: #1c1c1c;
+  color: #ff2d95;
   text-align: center;
   padding: 20px;
   margin-top: 20px;
