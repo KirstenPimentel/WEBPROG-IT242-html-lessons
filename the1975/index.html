@@ -6,23 +6,21 @@
 <title>The 1975 Fan Website</title>
 
 <link rel="stylesheet" href="css/style.css">
-<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 </head>
 
 <body>
 
 <!-- HEADER -->
 <div class="header">
-  Personal Profile Web Page
+  1975 Concert Gallery
 </div>
 
-<!-- NAVIGATION (SIDEBAR MOVED HERE) -->
+<!-- NAVIGATION -->
 <nav>
   <a href="index.html">Home</a>
-  <a href="#about">My Profile</a>
-  <a href="#">APC RAMS</a>
+  <a href="apcrams.html">APC RAMS</a>
   <a href="resources.html">Resources</a>
-  <a href="https://open.spotify.com/playlist/2HsUnenU2argKszYFjNoIK?si=33c80e5e781946fc" target="_blank">
+  <a href="https://open.spotify.com/playlist/2HsUnenU2argKszYFjNoIK" target="_blank">
     Spotify Playlist 🎧
   </a>
 </nav>
@@ -36,45 +34,46 @@
   </div>
 
   <!-- CENTER: ABOUT ME -->
-  <div class="main" id="about">
+  <div class="main">
     <h1>About Me</h1>
 
-    <!-- DO NOT REMOVE -->
     <p><strong>Name:</strong> Kirsten Evan M. Pimentel</p>
     <p><strong>Education:</strong> Asia Pacific College</p>
     <p><strong>Course:</strong> BSIT – Mobile & Internet Technologies</p>
 
-    <!-- PERSONAL PARAGRAPH -->
     <p class="about-text">
-      In my free time, I enjoy playing online games with my friends such as
+      In my free time, I enjoy playing online games with my friends, such as
       Valorant and League of Legends. When I play by myself, I like to rewatch
       my favorite series like Haikyuu, The Walking Dead, and Peaky Blinders.
     </p>
+
+    <p class="about-text">
+      When I want to relax, I usually read books. One of my favorite books is
+      <em>The Perks of Being a Wallflower</em>.
+    </p>
   </div>
 
- <div class="right">
-  <h3>Favorite The 1975 Highlights</h3>
+  <!-- RIGHT: THE 1975 INFO -->
+  <div class="right">
+    <h3>Favorite The 1975 Highlights</h3>
 
-  <p><strong>Favorite Era:</strong><br>
-  <em>A Brief Inquiry Into Online Relationships</em></p>
+    <p><strong>Favorite Era:</strong><br>
+    <em>A Brief Inquiry Into Online Relationships</em></p>
 
-  <p><strong>Favorite Song:</strong><br>
-  <em>I Always Wanna Die (Sometimes)</em></p>
+    <p><strong>Favorite Song:</strong><br>
+    <em>I Always Wanna Die (Sometimes)</em></p>
 
-  <p><strong>Favorite Lyric:</strong><br>
-  “If you can't survive, just try”</p>
+    <p><strong>Favorite Lyric:</strong><br>
+    “If you can't survive, just try”</p>
 
-  <p><strong>Go-to Emotion:</strong> Chill</p>
-
-  <p><strong>Never Skip:</strong> Heart Out</p>
-
-  <p><strong>Recommendation:</strong> She's American</p>
-</div>
-
+    <p><strong>Go-to Emotion:</strong> Chill</p>
+    <p><strong>Never Skip:</strong> Heart Out</p>
+    <p><strong>Recommendation:</strong> She's American</p>
+  </div>
 
 </div>
 
-<!-- SPOTIFY EMBED -->
+<!-- SPOTIFY -->
 <iframe
   style="border-radius:12px"
   src="https://open.spotify.com/embed/playlist/2HsUnenU2argKszYFjNoIK"
@@ -85,36 +84,29 @@
 </iframe>
 
 <!-- GALLERY -->
-<section id="galleryApp">
+<section>
   <h2 class="center">Concert Gallery</h2>
 
   <div class="gallery">
-    <div class="gallery-item" v-for="(img, index) in images" :key="index">
-      <img :src="img" :alt="'Concert photo ' + (index + 1)">
-    </div>
+    <img src="images/concert1.jpg" onclick="openLightbox(this)">
+    <img src="images/concert2.jpg" onclick="openLightbox(this)">
+    <img src="images/concert3.jpg" onclick="openLightbox(this)">
+    <img src="images/concert4.jpg" onclick="openLightbox(this)">
+    <img src="images/concert5.jpg" onclick="openLightbox(this)">
+    <img src="images/concert6.jpg" onclick="openLightbox(this)">
   </div>
 </section>
 
-<!-- GUESTBOOK -->
-<section id="guestbookApp" class="guestbook">
-  <h2>Guestbook</h2>
-
-  <input v-model="name" placeholder="Your name">
-  <textarea v-model="comment" placeholder="Your comment"></textarea>
-  <button @click="addComment">Post</button>
-
-  <ul>
-    <li v-for="entry in entries">
-      <strong>{{ entry.name }}:</strong> {{ entry.comment }}
-    </li>
-  </ul>
-</section>
+<!-- LIGHTBOX -->
+<div id="lightbox" onclick="closeLightbox()">
+  <img id="lightbox-img">
+</div>
 
 <!-- FOOTER -->
 <div class="footer">
   Resize the browser window to see the responsive effect.
 </div>
 
-<script src="js/app.js"></script>
+<script src="js/lightbox.js"></script>
 </body>
 </html>
